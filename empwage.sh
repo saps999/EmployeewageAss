@@ -28,9 +28,9 @@ if [ $ispresent -eq $randomcheck ]
 then
 rateperhr=20
 isfulltime=1
-isparttime=2
+isparttime=0
 
-empcheck=$((RANDOM%3))
+empcheck=$((RANDOM%2))
 
 case $empcheck in
 $isfulltime)
@@ -38,7 +38,6 @@ $isfulltime)
 $isparttime)
         emphrs=4;;
 *)
-        emphrs=0;;
 esac
 
 dailywage=$(( $rateperhr * $emphrs ))
