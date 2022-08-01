@@ -19,7 +19,7 @@ empfulldayhr=8
 fulldaywage=$(( $wageperhr * $empfulldayhr ))
 echo "Employee full day wage is $fulldaywage"
 
-empparttimehr=4
+empPartTimehr=4
 
-parttimewage=$(( $wageperhr * $empparttimehr ))
-echo "Employee part time wage is $parttimewage"
+partTimewage=$(( $wageperhr * $empPartTimehr ))
+echo "Employee part time wage is $partTimewage"
