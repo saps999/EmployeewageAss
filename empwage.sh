@@ -1,5 +1,16 @@
 #!/bin/bash
 
-echo "WELCOME TO EMPLOYEE WAGE PROGRAME"
+echo "WELCOME TO EMPLOYEE WAGE PROGRAM"
 
-echo "UC1 created"
+ispresent=1
+randomcheck=$((RANDOM%2))
+
+if [ $ispresent -eq $randomcheck ]
+then
+echo "Employee is present"
+
+else
+echo "Employee is absent"
+fi
+
+
