@@ -13,4 +13,10 @@ else
 echo "Employee is absent"
 fi
 
+wageperhr=20
+empfulldayhr=8
+
+fulldaywage=$(( $wageperhr * $empfulldayhr ))
+echo "Employee full day wage is $fulldaywage"
+
 
