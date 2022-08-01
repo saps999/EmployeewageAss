@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 echo "WELCOME TO EMPLOYEE WAGE PROGRAM"
 
@@ -23,3 +23,28 @@ empPartTimehr=4
 
 partTimewage=$(( $wageperhr * $empPartTimehr ))
 echo "Employee part time wage is $partTimewage"
+
+if [ $ispresent -eq $randomcheck ]
+then
+rateperhr=20
+isfulltime=1
+isparttime=2
+
+empcheck=$((RANDOM%3))
+
+case $empcheck in
+$isfulltime)
+        emphrs=8;;
+$isparttime)
+        emphrs=4;;
+*)
+        emphrs=0;;
+esac
+
+dailywage=$(( $rateperhr * $emphrs ))
+echo "Employee wage is $dailywage"
+
+else
+echo "Employee wage is 0"
+fi
+
